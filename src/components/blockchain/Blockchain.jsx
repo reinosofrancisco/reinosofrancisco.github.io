@@ -1,6 +1,6 @@
 import "./blockchain.scss"
 import useMetaMask from '../../hooks/metamask';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { init } from 'ityped'
 
 
@@ -28,6 +28,20 @@ slowDrift: false,
 
 export default function Blockchain() {
     const { connect, disconnect, isActive, account, shouldDisable } = useMetaMask()
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+
+    const isMobile = width <= 910;
 
 
     // ** Add the Metamask Obj to the imgContainer AFTER it loads. */
@@ -76,12 +90,18 @@ export default function Blockchain() {
                     
             {/* If Wallet is Active, Disconnect. If it's not active, Connect */}
             <div className="imgContainer" id="imgContainer" onClick={ isActive ? disconnect : connect} disabled={shouldDisable}>
+            
+            {/* If Mobile, Disable Follow Mouse for the Object and display it looking in a certain way  */}
+            {isMobile ? viewer.setFollowMouse(false) : viewer.setFollowMouse(true)}
+            {isMobile ? viewer.lookAt({x: 0, y: 0}) : "" }
+
 
                 {/* Old Static MetaMask Image */}
                 {/* <img id="logo-container" src="assets/metamask.svg" onClick={connect} disabled={shouldDisable} alt="" /> */}       
                 <div className="imgContainer" >
                      
                     <h2 > { isActive ? 'Wallet Address: ' + account : 'No Wallet Connected' }    </h2> 
+                    
                 </div>
 
             </div>
