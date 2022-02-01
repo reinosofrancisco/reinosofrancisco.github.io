@@ -15,4 +15,10 @@ Using the provided API by Metamask, It shows the insignia logo in 3D
 If you have a supported browser with Metamask, It will prompt asking to connect
 and will show your Wallet Address.
 
+### npm run deploy 
+This will deploy the distributable version of the React app to a branch named Master.
 
+The Source Code will be available at source_code branch. To add changes, use:
+git add .
+git commit -m "Source Code Changes"
+git push origin source_code
