@@ -53,7 +53,11 @@ export default function Portfolio() {
     <div className="right">
       <div className="imgContainer">
         <CrossfadeImage duration={300} src={IMAGES[index % IMAGES.length]}/>
+        <a href="#works">
+          <img src="assets/arrow.png" alt="" />
+        </a>
       </div>
+      
     </div>
 
   </div>;

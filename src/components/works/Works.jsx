@@ -19,8 +19,12 @@ export default function Works() {
                 <h1>Made in Java</h1>
                 <h3>| 2018 - UNLP | </h3>
                 <a href="#blockchain">
-                <img src="assets/arrow.png" alt=""/></a>
+                    <img src="assets/arrow.png" alt=""/>
+                </a>
             </div>
+            <a className="mobile_only" href="#blockchain">
+                <img src="assets/arrow.png" alt=""/>
+            </a>
             
         </div>
 

@@ -120,6 +120,31 @@
             }
         }
 
+        .mobile_only{
+            position: absolute;
+            bottom: 10px;
+            align-items: center;
+            display: none;
+
+            // Mobile Config
+            @include mobile{
+                position: relative;
+                display: inline;
+            }
+
+            img{
+                width: 90px;
+                animation: fadeinout 4s linear infinite;
+                opacity: 0;
+            }
+
+            @keyframes fadeinout {
+                50% { opacity: 1; }
+            }
+
+
+        }
+
 
     }
 
