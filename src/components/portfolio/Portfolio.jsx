@@ -20,7 +20,7 @@ const TEXTS_3 = [
 ]
 
 // Use images of the same Size or the CrossfadeImage bugs
-const IMAGES = ["assets/stm32.png","assets/atmega328p_2.png"]
+const IMAGES = ["assets/STM32_V1.png","assets/atmega328p_2.png"]
 
 export default function Portfolio() {
 
