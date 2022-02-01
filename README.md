@@ -19,6 +19,8 @@ and will show your Wallet Address.
 This will deploy the distributable version of the React app to a branch named Master.
 
 The Source Code will be available at source_code branch. To add changes, use:
+```
 git add .
 git commit -m "Source Code Changes"
 git push origin source_code
+```
