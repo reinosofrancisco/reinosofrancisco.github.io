@@ -21,12 +21,11 @@ export default function Works() {
                 <a href="#blockchain">
                     <img src="assets/arrow.png" alt=""/>
                 </a>
-            </div>
-            <a className="mobile_only" href="#blockchain">
-                <img src="assets/arrow.png" alt=""/>
-            </a>
-            
+            </div>  
         </div>
+        <a className="mobile_only_arrow" href="#blockchain">
+            <img src="assets/arrow.png" alt=""/>
+        </a>
 
     </div>;
 }

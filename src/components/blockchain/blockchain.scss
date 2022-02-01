@@ -2,6 +2,7 @@
 .blockchain{
     background-color: black;
     display: flex;
+    position: relative;
 
     color: $secondaryColor;
 
@@ -70,6 +71,10 @@
             flex-direction: column;
             justify-content: center;
 
+            @include mobile{
+                display: none;
+            }
+
 
             h2{
                 font-size: 20px;
@@ -81,6 +86,35 @@
 
             img{
                 width: 100%;
+            }
+        }
+
+        .staticImgContainer{
+            
+            width: 300px;
+            height: 300px;
+            
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            display: none;
+
+            @include mobile{
+                display: flex;
+            }
+
+
+            .staticText{
+                display: flex;
+                overflow: hidden;
+                font-size: 20px;
+                color: white;   
+            }
+
+            img{
+                width: 70%;
             }
         }
 
@@ -150,6 +184,30 @@
 
 
             }
+        }
+
+
+    }
+
+    .mobile_only_arrow{
+        position: absolute;
+        bottom: 10px;
+        align-items: center;
+        overflow: hidden;
+        display: none;
+
+        @include mobile{
+            display: inline;
+        }
+
+        img{
+            width: 90px;
+            animation: fadeinout 4s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes fadeinout {
+            50% { opacity: 1; }
         }
 
 

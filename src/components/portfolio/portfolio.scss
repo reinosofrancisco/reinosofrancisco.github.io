@@ -22,7 +22,6 @@
 
         color: $secondaryColor;
 
-        overflow: hidden;
 
         .wrapper{
             width: 100%;
@@ -40,9 +39,9 @@
             // Mobile Config
             @include mobile{
                 padding-left: 0px;
+                height: 500px;
             }
 
-            
 
             h1{
                 font-size: 60px;
@@ -51,14 +50,17 @@
                 // Mobile Config
                 @include mobile{
                     font-size: 40px;
+                    overflow: hidden;
                 }
             }
             h2{
                 font-size: 35px;
+                overflow: hidden;
                 
             }
             h3{
                 font-size: 30px;
+                overflow: hidden;
                 
 
                 // Mobile Config

@@ -87,9 +87,22 @@ export default function Blockchain() {
                 </div>
 
             </div>
+            <div className="staticImgContainer">
+                
+                <img src="assets/static_fox.png" alt="" />
+                <h2 className="staticText"> 3D in Browser</h2>
+                
+            </div>
 
 
         </div>
+
+        <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
+        <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
+        <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
+        <a className="mobile_only_arrow" href="#contact">
+            <img src="assets/arrow.png" alt=""/>
+        </a>
 
 
   </div>;
