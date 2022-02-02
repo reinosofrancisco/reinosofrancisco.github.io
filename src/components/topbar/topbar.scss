@@ -45,6 +45,10 @@
             .fox_pic{
                 height: 50px;
                 width: 50px;
+
+                @include mobile{
+                    display: none;
+                }
             }
 
             .itemContainer{
