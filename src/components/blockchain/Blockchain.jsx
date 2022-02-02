@@ -11,16 +11,16 @@ const ModelViewer = require('@metamask/logo');
 
 // To render with fixed dimensions:
 const viewer = ModelViewer({
-// Dictates whether width & height are px or multiplied
-pxNotRatio: true,
-width: 4000,
-height: 3000,
+    // Dictates whether width & height are px or multiplied
+    pxNotRatio: true,
+    width: 4000,
+    height: 3000,
 
-// To make the face follow the mouse.
-followMouse: true,
-// head should slowly drift (overrides lookAt)
-slowDrift: false,
-});
+    // To make the face follow the mouse.
+    followMouse: true,
+    // head should slowly drift (overrides lookAt)
+    slowDrift: false,
+    });
 /** METAMASK ICON END */
 
 
@@ -55,9 +55,6 @@ export default function Blockchain() {
 
 
     return <div className='blockchain' id='blockchain'>
-
-        
-        
         
         <div className="right"> 
             <div className="wrapper">
@@ -67,8 +64,8 @@ export default function Blockchain() {
                 <a href="#contact">
                 <img src="assets/arrow.png" alt=""/></a>
             </div>
-            
         </div>
+
         <div className="left"> 
             
             <h3><span ref={textRef}></span></h3>
@@ -87,6 +84,7 @@ export default function Blockchain() {
                 </div>
 
             </div>
+            
             <div className="staticImgContainer">
                 
                 <img src="assets/static_fox.png" alt="" />
