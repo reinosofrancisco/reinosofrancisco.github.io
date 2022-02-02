@@ -21,7 +21,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         </div>
 
         <div className="itemContainer">
-          <Mail className="icon"/>
+          <Mail className="icon" />
           <span> reinosofrancisco99@gmail.com</span>
         </div>
 
