@@ -3,28 +3,30 @@
 .topbar{
     width: 100%;
     height: 65px;
+
     background-color:transparent;
+
     color: $secondaryColor;
+
     position: fixed;
     top: 0;
     z-index: 3;
-    transition: all 1s ease;
-    overflow: hidden;
 
+    transition: all 1s ease;
+
+    overflow: hidden;
+    
     .wrapper{
-        padding: 10px 30px;
+        padding: 10px 40px;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
 
 
-        .left{
+
             display: flex;
             align-items: center;
-
-            .gitLogo{
-                font-size: 40px;
-            }
 
             .logo{
                 font-size: 40px;
@@ -36,8 +38,9 @@
 
             .itemContainer{
                 display: flex;
+
                 align-items: center;
-                margin-left: 30px;
+                margin-left: 50px;
 
                 @include mobile{
                     display: none;
@@ -53,9 +56,7 @@
                     font-weight: 500;
                 }
             }
-        }
-
-        .right{
+     
 
             .hamburger{
                 width: 32px;
@@ -73,7 +74,6 @@
                     transition: all 2s ease;
                 }
             }
-        }
 
     }
     &.active{
