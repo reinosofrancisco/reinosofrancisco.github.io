@@ -17,7 +17,7 @@ export default function Contact() {
 
     <div className="left">
       <div className="imgContainer">
-        <img src="assets/contact2.gif" alt="" />
+        <img src="assets/programmer.png" alt="" />
       </div>
     </div>
 
