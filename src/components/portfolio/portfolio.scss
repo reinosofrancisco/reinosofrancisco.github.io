@@ -35,17 +35,20 @@
 
             overflow: hidden;
 
+            
+
                 
             // Mobile Config
             @include mobile{
                 padding-left: 0px;
-                height: 500px;
+                height: 420px;
             }
 
 
             h1{
                 font-size: 60px;
                 margin: 10px 0;
+                text-align: center;
 
                 // Mobile Config
                 @include mobile{
@@ -56,16 +59,19 @@
             h2{
                 font-size: 35px;
                 overflow: hidden;
+                text-align: center;
                 
             }
             h3{
                 font-size: 30px;
                 overflow: hidden;
+                text-align: center;
+                
                 
 
                 // Mobile Config
                 @include mobile{
-                    width: 300px;
+                    width: 350px;
                     padding: 30px;
                     font-size: 20px;
                     overflow: hidden;
@@ -122,7 +128,7 @@
         }
 
         .imgContainer{
-            width: 700px;
+            width: 600px;
             height: 800px;
   
             display: flex;

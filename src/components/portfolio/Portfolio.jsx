@@ -8,15 +8,12 @@ const TEXTS = [ "Alarm Clock for", "Electronic lock for"];
 
 const TEXTS_2 = ["STM32F103C6", "ATMEGA328P",]
 
-const TEXTS_3 = ["RCC, Graphic Display,",
-  "Implements a FSM (Finite-State-Machine),",
-]
-const TEXTS_4 = ["DHT Temperature/Humidity sensor",
-  "LM016L Display and a 4x4 Keypad",
+const TEXTS_3 = ["RCC, Graphic Display, DHT Temperature/Humidity sensor",
+  "Implements a FSM (Finite-State-Machine), LM016L Display and a 4x4 Keypad",
 ]
 
 // Use images of the same Size or the CrossfadeImage bugs
-const IMAGES = ["assets/STM32_V3.png", "assets/atmega328p_2.png"]
+const IMAGES = ["assets/STM32_V3.png", "assets/A328P_V2.png"]
 
 export default function Portfolio() {
 
@@ -38,9 +35,9 @@ export default function Portfolio() {
         <h2><TextTransition noOverflow={true} text={TEXTS[index % TEXTS.length]} springConfig={presets.wobbly} /></h2>
         <h1><TextTransition noOverflow={true} text={TEXTS_2[index % TEXTS_2.length]} springConfig={presets.wobbly} /></h1>
         <h3><TextTransition noOverflow={true} text={TEXTS_3[index % TEXTS_3.length]} springConfig={presets.wobbly} /></h3>
-        <h3><TextTransition noOverflow={true} text={TEXTS_4[index % TEXTS_3.length]} springConfig={presets.wobbly} /></h3>
         <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>
-        <h3 className="protText"> + Proteus Simulations</h3>
+        
+        <h3 className="protText"> + Proteus Schematics, PCB and Simulations</h3>
         <a href="#works">
           <img src="assets/arrow.png" alt="" />
         </a>
