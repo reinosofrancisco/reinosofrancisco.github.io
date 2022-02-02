@@ -34,6 +34,12 @@
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
+
+                // Mobile Config
+                @include mobile{
+                    font-size: 30px;
+                    overflow: hidden;
+                }
             }
 
             .itemContainer{

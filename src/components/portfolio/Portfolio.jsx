@@ -35,7 +35,7 @@ export default function Portfolio() {
         <h2><TextTransition noOverflow={true} text={TEXTS[index % TEXTS.length]} springConfig={presets.wobbly} /></h2>
         <h1><TextTransition noOverflow={true} text={TEXTS_2[index % TEXTS_2.length]} springConfig={presets.wobbly} /></h1>
         <h3><TextTransition noOverflow={true} text={TEXTS_3[index % TEXTS_3.length]} springConfig={presets.wobbly} /></h3>
-        <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>
+        <p className="mob_only"><br>{/** Empty for the sake of good looking Front-End*/}</br></p>
         
         <h3 className="protText"> + Proteus Schematics, PCB and Simulations</h3>
         <a href="#works">
@@ -47,12 +47,11 @@ export default function Portfolio() {
     <div className="right">
       <div className="imgContainer">
         <CrossfadeImage duration={300} src={IMAGES[index % IMAGES.length]} />
-        <a href="#works">
-          <img src="assets/arrow.png" alt="" />
-        </a>
       </div>
-
     </div>
+    <a className="mobile_only_arrow" href="#works">
+      <img src="assets/arrow.png" alt=""/>
+    </a>
 
   </div>;
 }
