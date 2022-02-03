@@ -9,9 +9,6 @@ export default function Contact() {
     e.preventDefault();
     setMessage(true);
   }
-  
-
-
 
   return (<div className="contact" id="contact">
 
@@ -34,6 +31,10 @@ export default function Contact() {
       </form>
 
     </div>
+
+    <a className="mobile_only_arrow" href="#intro">
+      <img src="assets/arrow_up.png" alt=""/>
+    </a>
 
   </div>);
 }

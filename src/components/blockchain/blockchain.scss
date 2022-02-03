@@ -71,6 +71,8 @@
             flex-direction: column;
             justify-content: center;
 
+            overflow: hidden;
+
             @include mobile{
                 display: none;
             }
@@ -79,6 +81,7 @@
             h2{
                 font-size: 20px;
                 color: white;   
+                overflow: hidden;
             }
 
             

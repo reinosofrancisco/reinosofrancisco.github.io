@@ -29,6 +29,13 @@ export default function Portfolio() {
 
 
   return <div className='portfolio' id="portfolio">
+
+    <div className="right">
+      <div className="imgContainer">
+        <CrossfadeImage duration={300} src={IMAGES[index % IMAGES.length]} />
+      </div>
+    </div>
+
     <div className="left">
       <div className="wrapper">
 
@@ -38,18 +45,14 @@ export default function Portfolio() {
         <p className="mob_only"><br>{/** Empty for the sake of good looking Front-End*/}</br></p>
         
         <h3 className="protText"> + Proteus Schematics, PCB and Simulations</h3>
-        <a href="#works">
+        <a href="#contact">
           <img src="assets/arrow.png" alt="" />
         </a>
 
       </div>
     </div>
-    <div className="right">
-      <div className="imgContainer">
-        <CrossfadeImage duration={300} src={IMAGES[index % IMAGES.length]} />
-      </div>
-    </div>
-    <a className="mobile_only_arrow" href="#works">
+
+    <a className="mobile_only_arrow" href="#contact">
       <img src="assets/arrow.png" alt=""/>
     </a>
 

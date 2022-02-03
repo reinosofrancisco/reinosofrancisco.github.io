@@ -5,6 +5,8 @@
 .contact{
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
 
     // Mobile Config
     @include mobile{
@@ -114,5 +116,30 @@
         span{
             color: rgb(236, 11, 11);
         }
+    }
+
+    .mobile_only_arrow{
+
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+
+
+        @include mobile{
+            display: none;
+        }
+
+        img{
+            width: 90px;
+            animation: fadeinout 4s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes fadeinout {
+            50% { opacity: 1; }
+        }
+
     }
 }

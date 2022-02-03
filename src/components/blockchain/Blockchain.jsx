@@ -61,7 +61,7 @@ export default function Blockchain() {
                 <h2>Full-Stack</h2>
                 <h1>Blockchain</h1>
                 <h3>Development</h3>
-                <a href="#contact">
+                <a href="#portfolio">
                 <img src="assets/arrow.png" alt=""/></a>
             </div>
         </div>
@@ -98,7 +98,7 @@ export default function Blockchain() {
         <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
         <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
         <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
-        <a className="mobile_only_arrow" href="#contact">
+        <a className="mobile_only_arrow" href="#portfolio">
             <img src="assets/arrow.png" alt=""/>
         </a>
 
