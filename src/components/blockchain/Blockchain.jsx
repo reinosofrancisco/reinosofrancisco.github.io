@@ -1,7 +1,7 @@
 import "./blockchain.scss"
-import useMetaMask from '../../hooks/metamask';
-import { useEffect, useRef } from "react";
-import { init } from 'ityped'
+
+import { useEffect } from "react";
+
 
 
 
@@ -27,29 +27,20 @@ const viewer = ModelViewer({
 
 
 export default function Blockchain() {
-    const { connect, disconnect, isActive, account, shouldDisable } = useMetaMask()
+
 
 
     // ** Add the Metamask Obj to the imgContainer AFTER it loads. */
     useEffect(() => {
     let container = document.getElementById('imgContainer');
-    if (container) {
-        console.log(container);
-        container.insertBefore(viewer.container, container.firstChild); //Adds the Model BEFORE the container
-        //container.appendChild(viewer.container);  //Adds the Model AFTER the container
-    }
+        if (container) {
+            console.log(container);
+            container.insertBefore(viewer.container, container.firstChild); //Adds the Model BEFORE the container
+            //container.appendChild(viewer.container);  //Adds the Model AFTER the container
+        }
     },[]);
 
-    const textRef = useRef();
-    useEffect(()=>{
-    init(textRef.current, { 
-        showCursor: true,
-        typeSpeed: 100,
-        backDelay:1500,
-        backSpeed:60,
-        cursorChar: " |",
-        strings: [' Click the Fox to connect to Metamask',' This will show your Wallet Address',' You need to have the Extension installed' ] })
-    },[])
+
 
 
 
@@ -68,21 +59,10 @@ export default function Blockchain() {
 
         <div className="left"> 
             
-            <h3><span ref={textRef}></span></h3>
             <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>   
                     
             {/* If Wallet is Active, Disconnect. If it's not active, Connect */}
-            <div className="imgContainer" id="imgContainer" onClick={ isActive ? disconnect : connect} disabled={shouldDisable}>
-
-
-                {/* Old Static MetaMask Image */}
-                {/* <img id="logo-container" src="assets/metamask.svg" onClick={connect} disabled={shouldDisable} alt="" /> */}       
-                <div className="imgContainer" >
-                     
-                    <h2 > { isActive ? 'Wallet Address: ' + account : 'No Wallet Connected' }    </h2> 
-                    
-                </div>
-
+            <div className="imgContainer" id="imgContainer" >
             </div>
             
             <div className="staticImgContainer">

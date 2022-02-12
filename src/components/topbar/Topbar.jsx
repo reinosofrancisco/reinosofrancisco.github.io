@@ -9,7 +9,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         
         <a href="https://github.com/reinosofrancisco" rel="noopener noreferrer" target="_blank" className="logo"><GitHub className="logo"/></a>
 
-        <img className="fox_pic" src="assets/metamask_white_logo.png" alt="" />
+        {/* <img className="fox_pic" src="assets/metamask_white_logo.png" alt="" /> */}
         
         {/* npm add @material-ui/core 
             npm add @material-ui/icons
