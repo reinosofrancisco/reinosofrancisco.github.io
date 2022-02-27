@@ -22,7 +22,7 @@ export default function Portfolio() {
   useEffect(() => {
     const intervalId = setInterval(() =>
       setIndex(index => index + 1),
-      3000 // every 7 seconds
+      7000 // every 7 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);
