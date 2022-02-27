@@ -13,7 +13,8 @@ Using the provided API by Metamask, It shows the insignia logo in 3D
 ### Web3
 
 If you have a supported browser with Metamask, It will prompt asking to connect
-and will show your Wallet Address.
+and will show your Wallet Address. [Deleted]
+
 
 ### npm run deploy 
 This will deploy the distributable version of the React app to a branch named Master.
