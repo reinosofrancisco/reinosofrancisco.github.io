@@ -6,9 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This Project implements:
 
+### Front-End JavaScript + React
+
+Using the Create React App, it displays a Portfolio webpage.
+
 ### 3D Object Rendering
 
-Using the provided API by Metamask, It shows the insignia logo in 3D
+Using the provided API by Metamask, It shows the insignia logo in 3D.
 
 ### Web3
 
