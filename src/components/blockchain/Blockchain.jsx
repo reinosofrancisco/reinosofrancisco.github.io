@@ -76,11 +76,6 @@ export default function Blockchain() {
         </div>
 
         <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
-        <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
-        <p><br>{/** Empty for the sake of good looking Front-End*/}</br></p>  
-        <a className="mobile_only_arrow" href="#portfolio">
-            <img src="assets/arrow.png" alt=""/>
-        </a>
 
 
   </div>;

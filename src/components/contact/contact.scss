@@ -11,6 +11,7 @@
     // Mobile Config
     @include mobile{
         flex-direction: column;
+        padding-top: 10%;
     }
 
     .left{

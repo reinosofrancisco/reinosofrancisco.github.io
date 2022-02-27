@@ -13,7 +13,7 @@ const TEXTS_3 = ["RCC, Graphic Display, DHT Temperature/Humidity sensor",
 ]
 
 // Use images of the same Size or the CrossfadeImage bugs
-const IMAGES = ["assets/STM32_V3.png", "assets/A328P_V2.png"]
+const IMAGES = ["assets/STM32_V3.png", "assets/A328P_V4.png"]
 
 export default function Portfolio() {
 
@@ -22,7 +22,7 @@ export default function Portfolio() {
   useEffect(() => {
     const intervalId = setInterval(() =>
       setIndex(index => index + 1),
-      7000 // every 7 seconds
+      3000 // every 7 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);
@@ -42,7 +42,6 @@ export default function Portfolio() {
         <h2><TextTransition noOverflow={true} text={TEXTS[index % TEXTS.length]} springConfig={presets.wobbly} /></h2>
         <h1><TextTransition noOverflow={true} text={TEXTS_2[index % TEXTS_2.length]} springConfig={presets.wobbly} /></h1>
         <h3><TextTransition noOverflow={true} text={TEXTS_3[index % TEXTS_3.length]} springConfig={presets.wobbly} /></h3>
-        <p className="mob_only"><br>{/** Empty for the sake of good looking Front-End*/}</br></p>
         
         <h3 className="protText"> + Proteus Schematics, PCB and Simulations</h3>
         <a href="#contact">
@@ -51,10 +50,6 @@ export default function Portfolio() {
 
       </div>
     </div>
-
-    <a className="mobile_only_arrow" href="#contact">
-      <img src="assets/arrow.png" alt=""/>
-    </a>
 
   </div>;
 }

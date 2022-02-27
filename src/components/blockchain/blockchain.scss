@@ -10,7 +10,7 @@
     @include mobile{
         flex-direction: column;
         align-items: center;
-        padding-top: 150px;
+        padding-top: 40%;
     }
 
 
@@ -106,8 +106,8 @@
 
             @include mobile{
                 display: flex;
-                width: 200px;
-                height: 200px;
+                width: 250px;
+                height: 250px;
             }
 
 
@@ -189,30 +189,6 @@
 
 
             }
-        }
-
-
-    }
-
-    .mobile_only_arrow{
-        position: absolute;
-        bottom: 10px;
-        align-items: center;
-        overflow: hidden;
-        display: none;
-
-        @include mobile{
-            display: inline;
-        }
-
-        img{
-            width: 90px;
-            animation: fadeinout 4s linear infinite;
-            opacity: 0;
-        }
-
-        @keyframes fadeinout {
-            50% { opacity: 1; }
         }
 
 

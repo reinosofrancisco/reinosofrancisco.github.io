@@ -9,7 +9,7 @@
     @include mobile{
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 20%;
     }
 
 
@@ -47,19 +47,19 @@
             // Mobile Config
             @include mobile{
                 padding-left: 0px;
-                height: 350px;
+                height: 100%;
             }
 
 
             h1{
                 font-size: 60px;
-                margin: 10px 0;
                 text-align: center;
 
                 // Mobile Config
                 @include mobile{
                     font-size: 30px;
                     overflow: hidden;
+                    margin: 10px 0;
                 }
             }
             h2{
@@ -82,20 +82,17 @@
                 // Mobile Config
                 @include mobile{
                     width: 350px;
-                    padding: 30px;
+                    padding: 10px;
                     font-size: 18px;
                     overflow: hidden;
                 }
             }
 
-            .mob_only{
-                display: none;
-            }
 
             .protText{
                 color: #446c92;
                 @include mobile{
-                    display: none;
+                    //display: none;
                 }
 
             }
@@ -170,27 +167,6 @@
             }
 
         }
-    }
-
-    .mobile_only_arrow{
-
-        display: none;
-
-        @include mobile{
-            display: flex;
-        }
-
-        img{
-            width: 90px;
-            animation: fadeinout 4s linear infinite;
-            opacity: 0;
-        }
-
-        @keyframes fadeinout {
-            50% { opacity: 1; }
-        }
-
-
     }
 
 }

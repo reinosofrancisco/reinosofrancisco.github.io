@@ -23,9 +23,5 @@ export default function Works() {
                 </a>
             </div>  
         </div>
-        <a className="mobile_only_arrow" href="#blockchain">
-            <img src="assets/arrow.png" alt=""/>
-        </a>
-
     </div>;
 }

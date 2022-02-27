@@ -91,6 +91,10 @@
             justify-content: center;
             //left: 40%;
 
+            @include mobile{
+                display: none;
+            }
+
             img{
                 width: 90px;
                 animation: fadeinout 4s linear infinite;
